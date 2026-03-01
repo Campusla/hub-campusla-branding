@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLA | Track Record 15 Años - De Clase Mundial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --azul-corp: #002e5f; 
+            --verde-rubik: #00e676; 
+            --rosado-rubik: #ff1744; 
+            --blanco: #ffffff;
+            --negro-suave: #1a1a1a;
+            --gris-claro: #f8f9fa;
+            --sombra: 0 10px 30px rgba(0, 0, 0, 0.15);
+            --transicion: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+
+        body { background-color: var(--blanco); color: var(--negro-suave); line-height: 1.6; }
+
+        .contenedor { width: 90%; max-width: 1200px; margin: 0 auto; padding: 60px 0; }
+
+        /* BOTONES PRO */
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            transition: var(--transicion);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .btn-principal { background-color: var(--verde-rubik); color: var(--azul-corp); }
+        .btn-principal:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(0, 230, 118, 0.4); }
+
+        .btn-secundario { border: 2px solid var(--rosado-rubik); color: var(--rosado-rubik); background: transparent; }
+        .btn-secundario:hover { background-color: var(--rosado-rubik); color: var(--blanco); transform: scale(1.05); }
+
+        .btn-download {
+            background-color: var(--azul-corp);
+            color: var(--blanco);
+            margin-top: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn-download:hover { background-color: #004080; border-color: var(--verde-rubik); }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 46, 95, 0.85) 0%, rgba(0, 46, 95, 0.7) 100%), 
+                        url('https://images.unsplash.com/photo-1523240715639-93f8bb0a9929?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--blanco);
+        }
+
+        .hero h1 { font-size: 4rem; font-weight: 800; line-height: 1.1; margin-bottom: 25px; text-shadow: 2px 2px 10px rgba(0,0,0,0.3); }
+        .hero h1 span { color: var(--verde-rubik); }
+        .hero p { font-size: 1.3rem; margin-bottom: 40px; max-width: 900px; opacity: 0.95; margin-left: auto; margin-right: auto; }
+        .hero-btns { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+        /* TRACK RECORD SECTION */
+        .track-record { background-color: var(--gris-claro); text-align: center; padding: 100px 0; }
+        .titulo-seccion { font-size: 3rem; font-weight: 800; color: var(--azul-corp); margin-bottom: 50px; }
+        .titulo-seccion span { color: var(--rosado-rubik); }
+
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; margin-bottom: 40px; }
+        .stat-card {
+            background: var(--blanco);
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: var(--sombra);
+            transition: var(--transicion);
+            border-bottom: 6px solid var(--verde-rubik);
+        }
+        .stat-card:nth-child(even) { border-bottom-color: var(--rosado-rubik); }
+        .stat-card h3 { font-size: 3.5rem; color: var(--azul-corp); margin-bottom: 10px; }
+        .stat-card p { font-weight: 700; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* PRODUCTOS */
+        .productos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .product-card {
+            padding: 40px;
+            background: var(--blanco);
+            border-radius: 20px;
+            border: 1px solid #eee;
+            transition: var(--transicion);
+            text-align: left;
+        }
+        .product-card:hover { border-color: var(--verde-rubik); box-shadow: var(--sombra); }
+        .product-card h4 { font-size: 1.5rem; color: var(--azul-corp); margin-bottom: 15px; }
+
+        /* CTA FINAL */
+        .cta-final { background: var(--azul-corp); color: var(--blanco); text-align: center; padding: 100px 0; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .productos-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="contenedor">
+            <h1>CampusLA <span>15 Años</span><br>Ecosistema de Clase Mundial</h1>
+            <p>Trabajamos con comunidades indígenas, militares, ex-guerrillas, Estado y Alcaldías. Ganadores del Fondo Emprender. ¡La plataforma educativa que conecta a Latinoamérica!</p>
+            <div class="hero-btns">
+                <a href="https://campusla.github.io/hub-campusla-marketing/" class="btn btn-principal">Ver Escuelas Disponibles</a>
+                <a href="https://wa.me/573144365569" class="btn btn-secundario">Asesor: +57 314 4365569</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="track-record">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Nuestra <span>Hoja de Vida</span></h2>
+            <div class="stats-grid">
+                <div class="stat-card"><h3>+30k</h3><p>Estudiantes</p></div>
+                <div class="stat-card"><h3>89</h3><p>Universidades</p></div>
+                <div class="stat-card"><h3>32</h3><p>Departamentos</p></div>
+                <div class="stat-card"><h3>1M</h3><p>Social Views</p></div>
+            </div>
+            <a href="https://www.campuslatinoamerica.edu.co/portafolio-descarga.pdf" class="btn btn-download">
+                📥 Descargar Track Record PDF a tu Celular
+            </a>
+        </div>
+    </section>
+
+    <section class="contenedor">
+        <h2 class="titulo-seccion" style="text-align:center">Nuestros <span>Productos</span></h2>
+        <div class="productos-grid">
+            <div class="product-card">
+                <h4>UX/UI & Scrum</h4>
+                <p>Formación ágil para equipos que buscan eficiencia de clase mundial.</p>
+            </div>
+            <div class="product-card">
+                <h4>Certificación Idiomas</h4>
+                <p>Exámenes internacionales Oxford, ETS y Pearson en un solo lugar.</p>
+            </div>
+            <div class="product-card">
+                <h4>GIB Hub Dev</h4>
+                <p>Tecnología propia para el despliegue de ecosistemas educativos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <div class="contenedor">
+            <h2>¿Listo para empezar?</h2>
+            <p style="margin: 20px 0 40px;">Visita nuestra plataforma oficial o contáctanos de inmediato.</p>
+            <div class="hero-btns">
+                <a href="https://www.campuslatinoamerica.edu.co" class="btn btn-principal">Ir a www.campuslatinoamerica.edu.co</a>
+                <a href="https://wa.me/573144365569" class="btn btn-secundario">Hablar con un Humano</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
